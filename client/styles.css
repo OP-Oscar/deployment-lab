@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Sigmar&display=swap');
+
+
+
+html{
+  font-family: fantasy, cursive; 
+}
+.container{
+  background-color:lightblue;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#mainDiv{
+  background-color: lightcyan;
+}
+
+h1{
+  font-family: fantasy, cursive; 
+  font-size: 40px;
+  text-align: center;
+}
+
+p{
+  font-size: 18px;
+}
+#aboutSmartPlan{
+  font-family: fantasy, cursive; 
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.scene {
+    display: inline-block;
+    width: 200px;
+    height: 260px;
+  /*   border: 1px solid #CCC; */
+    margin: 40px 0;
+    perspective: 600px;
+  }
+  
+  #smartcards{
+    /* background-color: rgb(90, 90, 133); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+  }
+  
+  .card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+  
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    backface-visibility: hidden;
+  }
+  
+  .card__face--frontS {
+    background: #00adb4;
+    font-size: 80px;
+    line-height: 260px;
+  }
+  
+  .card__face--backS {
+    background: #00aeb4af;
+    transform: rotateY(180deg);
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .card__face--frontM {
+    background: #79ac35;
+    font-size: 80px;
+    line-height: 260px;
+  }
+  
+  .card__face--backM {
+    background: #79ac35cf;
+    transform: rotateY(180deg);
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .card__face--frontA {
+    background: #e87451;
+    font-size: 80px;
+    line-height: 260px;
+  }
+  
+  .card__face--backA {
+    background: #e87451d5;
+    transform: rotateY(180deg);
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .card__face--frontR {
+    background: #e44a5e;
+    font-size: 80px;
+    line-height: 260px;
+  }
+  
+  .card__face--backR {
+    background: #e44a5fcd;
+    transform: rotateY(180deg);
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .card__face--frontT {
+    background: #6a78b3;
+    font-size: 80px;
+    line-height: 260px;
+  }
+  
+  .card__face--backT {
+    background: #6a79b3b1;
+    transform: rotateY(180deg);
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  #list{
+    font-size: large;
+  }
+  .center {
+
+    text-align: center;
+  }
+
+  img{
+    /* border: 0px; */
+    border: none;
+    height: 215px;
+    width: 230px;
+    outline: none;
+    border-color: #ffffff00;
+    outline: #ffffff00;
+    
+  }
+
+  #topTwoBtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #compBtn, #fortBtn{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #complimentButton, #fortuneButton{
+    font-size: large;
+  }
+
+  #letter-1, #letter-2, #letter-3, #letter-4, #letter-5{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+
+  }
+
+.pTagAdjust{
+  width: 126px;
+  }
+
+  #apiDiv{
+    background-color: lightsteelblue;
+    text-align: center;
+  }
+
+  .aligment2Center{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
