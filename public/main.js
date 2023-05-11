@@ -24,7 +24,7 @@ const getCompliment = () => {
     //invoking adding addingSmart 
     addingSmart(btnCounter) 
     //axios get route
-    axios.get("http://localhost:4000/api/compliment/")
+    axios.get(`${__dirname}/api/compliment/`)
         .then(res => {
             const data = res.data; 
             //producing alert to user    
@@ -44,7 +44,7 @@ const getFortune = () => {
     // invoking adding addingSmart 
     addingSmart(btnCounter) 
     // axios request for fortunes route
-    axios.get("http://localhost:4000/api/fortune/")
+    axios.get(`${__dirname}/api/fortune/`)
         .then(res => {
             const data = res.data;  
             //producing alert to user    
@@ -60,7 +60,7 @@ const letterContainer = document.querySelector('#letter-content-container')
 const form = document.querySelector('form')
 
 //setting base URL since optional actions will be avail
-const baseURL = 'http://localhost:4000/api/smart'
+const baseURL = `${__dirname}/api/smart`
 
 // setting error and callback for data
 const letterCallback = ({ data: letter }) => displayLetters(letter)
